@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="eyes">
+    <span class="eye"></span>
+    <span class="eye wink"></span>
+  </div>
+</div>
+
+<canvas id="scene"></canvas>
+
+<nav class="nav">
+  <a href="#hero" class="logo">;)</a>
+  <div class="links">
+    <a href="#about">about</a>
+    <a href="#codebrave">codebrave</a>
+    <a href="#teaching">teaching</a>
+    <a href="#sketchbook">sketchbook</a>
+    <a href="#projects">projects</a>
+    <a href="#philosly">philosly</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <section id="hero">
+    <div class="content">
+      <h1>Hi, I'm <span class="mark">Leyla</span></h1>
+      <p class="big">Cool at first, Impressiive when you actually get to know me.</p>
+      <div class="quote-box">
+        <p id="quote"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="content reveal">
+      <h2>About me</h2>
+      <p class="big">I'm Leyla El Husseini, an LS student from Lebanon. I've been learning programming through CodeBrave, working with Python and web development while building projects of my own. Alongside that, I've been learning French independently and exploring different topics through courses and certifications.</p>
+      <p class="body">Outside of technology, I draw in graphite and charcoal, run philosly, a philosophy page on TikTok, and enjoy writing, debate, and exploring ideas.</p>
+
+      <h3>Skills</h3>
+      <ul class="chips">
+        <li>Python</li>
+        <li>Web Development</li>
+        <li>JavaScript</li>
+        <li>three.js</li>
+        <li>UI/UX Design</li>
+        <li>Drawing</li>
+        <li>Visual Storytelling</li>
+        <li>Data Analysis</li>
+        <li>Research</li>
+        <li>Problem Solving</li>
+        <li>Debate</li>
+        <li>Communication</li>
+        <li>Teaching</li>
+        <li>Adaptability</li>
+      </ul>
+
+      <div class="signature">
+        <svg class="peony" viewBox="0 0 200 210" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="62" cy="178" rx="14" ry="30" fill="#2f6b4f" transform="rotate(-62 62 178)"/>
+          <ellipse cx="138" cy="178" rx="14" ry="30" fill="#2f6b4f" transform="rotate(62 138 178)"/>
+          <ellipse cx="100" cy="52" rx="26" ry="44" fill="#762333"/>
+          <ellipse cx="100" cy="52" rx="26" ry="44" fill="#762333" transform="rotate(45 100 100)"/>
+          <ellipse cx="100" cy="52" rx="26" ry="44" fill="#762333" transform="rotate(90 100 100)"/>
+          <ellipse cx="100" cy="52" rx="26" ry="44" fill="#762333" transform="rotate(135 100 100)"/>
+          <ellipse cx="100" cy="52" rx="26" ry="44" fill="#762333" transform="rotate(180 100 100)"/>
+          <ellipse cx="100" cy="52" rx="26" ry="44" fill="#762333" transform="rotate(225 100 100)"/>
+          <ellipse cx="100" cy="52" rx="26" ry="44" fill="#762333" transform="rotate(270 100 100)"/>
+          <ellipse cx="100" cy="52" rx="26" ry="44" fill="#762333" transform="rotate(315 100 100)"/>
+          <ellipse cx="100" cy="62" rx="22" ry="36" fill="#A83A4A" transform="rotate(20 100 100)"/>
+          <ellipse cx="100" cy="62" rx="22" ry="36" fill="#A83A4A" transform="rotate(80 100 100)"/>
+          <ellipse cx="100" cy="62" rx="22" ry="36" fill="#A83A4A" transform="rotate(140 100 100)"/>
+          <ellipse cx="100" cy="62" rx="22" ry="36" fill="#A83A4A" transform="rotate(200 100 100)"/>
+          <ellipse cx="100" cy="62" rx="22" ry="36" fill="#A83A4A" transform="rotate(260 100 100)"/>
+          <ellipse cx="100" cy="62" rx="22" ry="36" fill="#A83A4A" transform="rotate(320 100 100)"/>
+          <ellipse cx="100" cy="74" rx="16" ry="26" fill="#641B27"/>
+          <ellipse cx="100" cy="74" rx="16" ry="26" fill="#641B27" transform="rotate(72 100 100)"/>
+          <ellipse cx="100" cy="74" rx="16" ry="26" fill="#641B27" transform="rotate(144 100 100)"/>
+          <ellipse cx="100" cy="74" rx="16" ry="26" fill="#641B27" transform="rotate(216 100 100)"/>
+          <ellipse cx="100" cy="74" rx="16" ry="26" fill="#641B27" transform="rotate(288 100 100)"/>
+          <circle cx="100" cy="100" r="9" fill="#f7d774"/>
+        </svg>
+        <p>The peony is my favorite flower. It is often associated with romance, prosperity, good fortune, and honor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="codebrave">
+    <div class="content reveal">
+      <h2>CodeBrave</h2>
+      <p class="big">I was accepted into CodeBrave, a Lebanese non-profit that teaches computer science and AI to underserved children and youth.</p>
+      <p class="body">Since 2018 it has brought tech education to public schools, shelters, and community centers, so young people can build skills for the careers of the future.</p>
+      <p class="thanks">Special thanks to my teacher for making this program ten times better.</p>
+      <a href="https://codebrave.org/" target="_blank" rel="noopener" class="link">visit codebrave.org &rarr;</a>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <div class="content reveal">
+      <h2>Teaching &amp; Mentoring</h2>
+      <p class="big">In Grade 9, I worked with students with different learning, communication, and behavioral needs.</p>
+      <p class="body">I adapted activities and the way I communicated with each student, using play, conversation, and shared activities to build trust and help them feel more included. I also encouraged other students to look beyond differences and accept their classmates as they were.</p>
+      <p class="thanks">The experience taught me patience, adaptability, and how much trust can change the way someone learns and communicates.</p>
+    </div>
+  </section>
+
+  <section id="sketchbook">
+    <div class="content wide">
+      <h2 class="reveal">Sketchbook</h2>
+      <div class="gallery reveal">
+        <figure class="print">
+          <img src="d1.jpeg" alt="charcoal portrait">
+          <figcaption>first charcoal drawing</figcaption>
+        </figure>
+        <figure class="print">
+          <img src="d2.jpeg" alt="qays and layla">
+          <figcaption>qays and layla</figcaption>
+        </figure>
+        <figure class="print">
+          <img src="d3.jpeg" alt="pencil drawing">
+          <figcaption>quick sketch</figcaption>
+        </figure>
+        <figure class="print">
+          <img src="d4.jpeg" alt="mother figure">
+          <figcaption>first detailed drawing with a pencil</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="content">
+      <h2 class="reveal">Projects</h2>
+
+      <a href="https://leylaelhusseini.github.io/Jake-s-Sandwich-Recipe/" target="_blank" rel="noopener" class="card reveal">
+        <h3>Jake's Perfect Sandwich</h3>
+        <p>A game where you search the adventure world for ingredients to make Jake's Perfect Sandwich.</p>
+      </a>
+
+      <a href="https://leylaelhusseini.github.io/TOURDER/" target="_blank" rel="noopener" class="card reveal">
+        <h3>Tourder</h3>
+        <p>A Tinder-style app for cities. Or is it?</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="philosly">
+    <div class="content reveal">
+      <h2>philosly</h2>
+      <p class="big">My philosophy page on TikTok.</p>
+
+      <div class="stats">
+        <div><strong>3.6K</strong><span>followers</span></div>
+        <div><strong>1.1M</strong><span>likes</span></div>
+      </div>
+
+      <figure class="print shot">
+        <a href="https://www.tiktok.com/@philosly" target="_blank" rel="noopener">
+          <img src="philosly.png" alt="philosly">
+        </a>
+        <figcaption>
+          <a href="https://www.tiktok.com/@philosly" target="_blank" rel="noopener">open @philosly on TikTok</a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="content reveal">
+      <h2>Say hi</h2>
+      <p class="big">text me on</p>
+      <a href="mailto:leylaelhusseinii@gmail.com" class="mail">leylaelhusseinii@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>don't miss (on) me</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
